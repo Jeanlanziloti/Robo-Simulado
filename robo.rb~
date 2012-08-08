@@ -1,0 +1,45 @@
+ # coding: utf-8
+
+class RoboSimulado 
+		@@x=0
+		@@y=0
+		@@energia=100
+     
+    def aumentaX(v)
+       @@x +=v
+       @@energia-=1
+			
+    end 
+    
+    def diminuiX(v)
+      @@x-=v
+      @@energia-=1
+    end
+
+    def aumentaY(v)
+       @@y+=v   
+			 @@energia-=1 
+
+    end
+
+
+   def diminuiY(v)
+       @@y-=v
+			 @@energia-=1
+   end 
+    
+ 
+
+   robosimulado = RoboSimulado.new
+
+	puts " Robo simulado Jean Lanziloti RUBY ON RAILS"
+
+  robosimulado.aumentaY(9)
+	robosimulado.aumentaX(8)
+  robosimulado.aumentaY(5)
+	robosimulado.aumentaX(3)
+	robosimulado.aumentaY(8)
+	
+  puts "Posição X: #{@@x} Posição Y: #{@@y} Energia restante: #{@@energia}"
+  
+end
